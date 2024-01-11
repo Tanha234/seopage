@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Application from "./Components/Application";
+import Upload from "./Components/Upload";
 
 
 
@@ -12,15 +13,17 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Application />, // Replace with your valid React element or component
+      element: <Application />,
+    },
+    {
+      path: "/upload",
+      element: <Upload />, 
     },
   ]);
 
   return (
     <>
-      {/*
-        Add your JSX content here if needed
-      */}
+    
       <React.StrictMode>
         <RouterProvider router={router} />
       </React.StrictMode>

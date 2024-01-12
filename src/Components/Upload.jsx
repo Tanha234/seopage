@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { Form, Button, Row, Col } from "react-bootstrap";
 
+
 const Upload = () => {
+ 
   // eslint-disable-next-line no-unused-vars
 
  // eslint-disable-next-line no-unused-vars
@@ -82,6 +84,7 @@ const Upload = () => {
 
   return (
     <div>
+      
       <Row className="mt-5 pt-5">
         <Col className="col-md-6">
        <img src="../../images/imk-removebg-preview.png"/>

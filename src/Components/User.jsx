@@ -37,7 +37,8 @@ const User = () => {
     };
     return (
         <div>
-            <h1>{user.length}</h1>
+           
+         
             <CardGroup style={{ height: '1100px', width: '2900px', overflowX: 'auto', overflowY: 'hidden', backgroundColor: 'blue !important' }}>
   <div style={{ display: 'flex', whiteSpace: 'nowrap', WebkitOverflowScrolling: 'touch' }}>
 

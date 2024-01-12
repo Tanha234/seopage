@@ -224,7 +224,7 @@ const User = () => {
           icon={faLink}
           onClick={openModal}
         />
-        15
+      <span>{user.length}</span>
       
 
       <Modal show={isModalOpen} onHide={closeModal}>
@@ -310,7 +310,7 @@ const User = () => {
                   <div >
                   <p className="ms-1 pt-3 ps-3">
     <FontAwesomeIcon style={{color:'grey',height:'20px',marginRight: '6px'}} icon={faComments} />
-  15
+    <span>{user.length}</span>
   </p>
 </div>
 <div >
@@ -413,7 +413,7 @@ const User = () => {
           icon={faLink}
           onClick={openModal}
         />
-        15
+       <span>{user.length}</span>
       
 
       <Modal show={isModalOpen} onHide={closeModal}>
@@ -508,8 +508,7 @@ const User = () => {
           style={{ color: 'grey', height: '20px', marginRight: '6px', cursor: 'pointer',marginTop:'15px',paddingLeft:'14px' }}
           icon={faLink}
           onClick={openModal}
-        />
-        15
+        /> <span>{user.length}</span>
       
 
       <Modal show={isModalOpen} onHide={closeModal}>
@@ -603,7 +602,7 @@ const User = () => {
           icon={faLink}
           onClick={openModal}
         />
-        15
+        <span>{user.length}</span>
       
 
       <Modal show={isModalOpen} onHide={closeModal}>
@@ -724,7 +723,7 @@ const User = () => {
           icon={faLink}
           onClick={openModal}
         />
-        15
+        <span>{user.length}</span>
       
 
       <Modal show={isModalOpen} onHide={closeModal}>
@@ -820,7 +819,7 @@ const User = () => {
           icon={faLink}
           onClick={openModal}
         />
-        15
+        <span>{user.length}</span>
       
 
       <Modal show={isModalOpen} onHide={closeModal}>
@@ -915,7 +914,7 @@ const User = () => {
           icon={faLink}
           onClick={openModal}
         />
-        15
+       <span>{user.length}</span>
       
 
       <Modal show={isModalOpen} onHide={closeModal}>
@@ -1009,7 +1008,7 @@ const User = () => {
           icon={faLink}
           onClick={openModal}
         />
-        15
+        <span>{user.length}</span>
       
 
       <Modal show={isModalOpen} onHide={closeModal}>
@@ -1105,7 +1104,7 @@ const User = () => {
           icon={faLink}
           onClick={openModal}
         />
-        15
+     <span>{user.length}</span>
       
 
       <Modal show={isModalOpen} onHide={closeModal}>
@@ -1199,7 +1198,7 @@ const User = () => {
           icon={faLink}
           onClick={openModal}
         />
-        15
+         <span>{user.length}</span>
       
 
       <Modal show={isModalOpen} onHide={closeModal}>
@@ -1320,7 +1319,7 @@ const User = () => {
           icon={faLink}
           onClick={openModal}
         />
-        15
+      <span>{user.length}</span>
       
 
       <Modal show={isModalOpen} onHide={closeModal}>
@@ -1416,7 +1415,7 @@ const User = () => {
           icon={faLink}
           onClick={openModal}
         />
-        15
+      <span>{user.length}</span>
       
 
       <Modal show={isModalOpen} onHide={closeModal}>
@@ -1511,7 +1510,7 @@ const User = () => {
           icon={faLink}
           onClick={openModal}
         />
-        15
+      <span>{user.length}</span>
       
 
       <Modal show={isModalOpen} onHide={closeModal}>
@@ -1605,7 +1604,7 @@ const User = () => {
           icon={faLink}
           onClick={openModal}
         />
-        15
+     <span>{user.length}</span>
       
 
       <Modal show={isModalOpen} onHide={closeModal}>
@@ -1701,7 +1700,7 @@ const User = () => {
           icon={faLink}
           onClick={openModal}
         />
-        15
+        <span>{user.length}</span>
       
 
       <Modal show={isModalOpen} onHide={closeModal}>
@@ -1795,7 +1794,7 @@ const User = () => {
           icon={faLink}
           onClick={openModal}
         />
-        15
+        <span>{user.length}</span>
       
 
       <Modal show={isModalOpen} onHide={closeModal}>
@@ -1912,8 +1911,7 @@ const User = () => {
           icon={faLink}
           onClick={openModal}
         />
-        15
-      
+       <span>{user.length}</span>
 
       <Modal show={isModalOpen} onHide={closeModal}>
         <Modal.Header closeButton>
@@ -2007,7 +2005,7 @@ const User = () => {
           icon={faLink}
           onClick={openModal}
         />
-        15
+        <span>{user.length}</span>
       
 
       <Modal show={isModalOpen} onHide={closeModal}>
@@ -2101,8 +2099,7 @@ const User = () => {
           icon={faLink}
           onClick={openModal}
         />
-        15
-      
+      <span>{user.length}</span>
 
       <Modal show={isModalOpen} onHide={closeModal}>
         <Modal.Header closeButton>
@@ -2194,7 +2191,7 @@ const User = () => {
           icon={faLink}
           onClick={openModal}
         />
-        15
+    <span>{user.length}</span>
       
 
       <Modal show={isModalOpen} onHide={closeModal}>
@@ -2289,7 +2286,7 @@ const User = () => {
           icon={faLink}
           onClick={openModal}
         />
-        15
+    <span>{user.length}</span>
       
 
       <Modal show={isModalOpen} onHide={closeModal}>
@@ -2388,7 +2385,7 @@ const User = () => {
           icon={faLink}
           onClick={openModal}
         />
-        15
+      <span>{user.length}</span>
       
 
       <Modal show={isModalOpen} onHide={closeModal}>
@@ -2498,7 +2495,7 @@ const User = () => {
           icon={faLink}
           onClick={openModal}
         />
-        15
+       <span>{user.length}</span>
       
 
       <Modal show={isModalOpen} onHide={closeModal}>
@@ -2593,7 +2590,7 @@ const User = () => {
           icon={faLink}
           onClick={openModal}
         />
-        15
+        <span>{user.length}</span>
       
 
       <Modal show={isModalOpen} onHide={closeModal}>
@@ -2687,7 +2684,7 @@ const User = () => {
           icon={faLink}
           onClick={openModal}
         />
-        15
+      <span>{user.length}</span>
       
 
       <Modal show={isModalOpen} onHide={closeModal}>
@@ -2780,7 +2777,7 @@ const User = () => {
           icon={faLink}
           onClick={openModal}
         />
-        15
+    <span>{user.length}</span>
       
 
       <Modal show={isModalOpen} onHide={closeModal}>
@@ -2875,7 +2872,7 @@ const User = () => {
           icon={faLink}
           onClick={openModal}
         />
-        15
+   <span>{user.length}</span>
       
 
       <Modal show={isModalOpen} onHide={closeModal}>
@@ -2968,7 +2965,7 @@ const User = () => {
           icon={faLink}
           onClick={openModal}
         />
-        15
+      <span>{user.length}</span>
       
 
       <Modal show={isModalOpen} onHide={closeModal}>
@@ -3084,7 +3081,7 @@ const User = () => {
           icon={faLink}
           onClick={openModal}
         />
-        15
+        <span>{user.length}</span>
       
 
       <Modal show={isModalOpen} onHide={closeModal}>
@@ -3179,7 +3176,7 @@ const User = () => {
           icon={faLink}
           onClick={openModal}
         />
-        15
+       <span>{user.length}</span>
       
 
       <Modal show={isModalOpen} onHide={closeModal}>
@@ -3273,7 +3270,7 @@ const User = () => {
           icon={faLink}
           onClick={openModal}
         />
-        15
+       <span>{user.length}</span>
       
 
       <Modal show={isModalOpen} onHide={closeModal}>
@@ -3461,7 +3458,7 @@ const User = () => {
           icon={faLink}
           onClick={openModal}
         />
-        15
+      <span>{user.length}</span>
       
 
       <Modal show={isModalOpen} onHide={closeModal}>
@@ -3554,7 +3551,7 @@ const User = () => {
           icon={faLink}
           onClick={openModal}
         />
-        15
+       <span>{user.length}</span>
       
 
       <Modal show={isModalOpen} onHide={closeModal}>

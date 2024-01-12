@@ -24,7 +24,7 @@ function App() {
    
     },
     {
-      path: "/user",
+      path: "/",
       element: <User />, 
       loader:()=>fetch('http://localhost:5000/upload')
 

@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Application from "./Components/Application";
+// import Application from "./Components/Application";
 import Upload from "./Components/Upload";
 import User from "./Components/User";
 
@@ -12,12 +12,12 @@ import User from "./Components/User";
 
 function App() {
   const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Application />,
-      loader: () => fetch('http://localhost:5000/upload').then((res) => res.json())
+    // {
+    //   path: "/",
+    //   element: <Application />,
+    
 
-    },
+    // },
     {
       path: "/upload",
       element: <Upload />, 

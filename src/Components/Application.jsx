@@ -8,11 +8,11 @@ import '../Components/Application.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from "react";
-import {  useNavigate, useRouteLoaderData } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 const Application = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const navigate = useNavigate();
-  const user=useRouteLoaderData();
+  // const user=useRouteLoaderData();
 
 const handleSaveChanges = () => {
   
@@ -35,7 +35,7 @@ const handleSaveChanges = () => {
     return (
         <div >  
          
-        <h1>{user.length}</h1>
+        {/* <h1>{user.length}</h1> */}
   <CardGroup style={{ height: '1100px', width: '2900px', overflowX: 'auto', overflowY: 'hidden', backgroundColor: 'blue !important' }}>
   <div style={{ display: 'flex', whiteSpace: 'nowrap', WebkitOverflowScrolling: 'touch' }}>
 

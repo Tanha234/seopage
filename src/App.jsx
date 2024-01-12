@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Application from "./Components/Application";
 import Upload from "./Components/Upload";
+import User from "./Components/User";
 
 
 
@@ -14,10 +15,20 @@ function App() {
     {
       path: "/",
       element: <Application />,
+      loader: () => fetch('http://localhost:5000/upload').then((res) => res.json())
+
     },
     {
       path: "/upload",
       element: <Upload />, 
+   
+    },
+    {
+      path: "/user",
+      element: <User />, 
+      loader:()=>fetch('http://localhost:5000/upload')
+
+   
     },
   ]);
 

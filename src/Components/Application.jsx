@@ -8,10 +8,11 @@ import '../Components/Application.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from "react";
-import {  useNavigate } from "react-router-dom";
+import {  useNavigate, useRouteLoaderData } from "react-router-dom";
 const Application = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const navigate = useNavigate();
+  const user=useRouteLoaderData();
 
 const handleSaveChanges = () => {
   
@@ -28,13 +29,17 @@ const handleSaveChanges = () => {
 
   const closeModal = () => {
     setModalOpen(false);
+    // Additional cleanup if needed
   };
+  
     return (
         <div >  
+         
+        <h1>{user.length}</h1>
   <CardGroup style={{ height: '1100px', width: '2900px', overflowX: 'auto', overflowY: 'hidden', backgroundColor: 'blue !important' }}>
   <div style={{ display: 'flex', whiteSpace: 'nowrap', WebkitOverflowScrolling: 'touch' }}>
 
-     
+
             {/* first potion */}
           <Card style={{ width: '490px', height:'1100px',backgroundColor:'#E8E8E8',}}>
           <div style={{ overflowY: 'auto', height: '1100px',   overflowX: 'hidden', }}>
@@ -1900,10 +1905,32 @@ const handleSaveChanges = () => {
   </p>
 </div>
 <div >
-<p className="ms-1 pt-3 ps-3">
-  <FontAwesomeIcon style={{ color: 'grey', height: '20px', marginRight: '6px' }} icon={faLink} />
-  15
-</p>
+<FontAwesomeIcon
+          style={{ color: 'grey', height: '20px', marginRight: '6px', cursor: 'pointer',marginTop:'15px',paddingLeft:'14px' }}
+          icon={faLink}
+          onClick={openModal}
+        />
+        15
+      
+
+      <Modal show={isModalOpen} onHide={closeModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal title</Modal.Title>
+        </Modal.Header>
+
+        <Modal.Body>
+          <p>Do you want to upload files?</p>
+        </Modal.Body>
+
+        <Modal.Footer>
+          <Button variant="secondary" onClick={closeModal}>
+            No
+          </Button>
+          <Button variant="primary" onClick={handleSaveChanges}>
+            Yes
+          </Button>
+        </Modal.Footer>
+      </Modal>
 </div>
 <div >
                   <p className="ms-1 pt-3 ps-4">
@@ -1973,10 +2000,32 @@ const handleSaveChanges = () => {
   </p>
 </div>
 <div >
-<p className="ms-1 pt-3 ps-3">
-  <FontAwesomeIcon style={{ color: 'grey', height: '20px', marginRight: '6px' }} icon={faLink} />
-  15
-</p>
+<FontAwesomeIcon
+          style={{ color: 'grey', height: '20px', marginRight: '6px', cursor: 'pointer',marginTop:'15px',paddingLeft:'14px' }}
+          icon={faLink}
+          onClick={openModal}
+        />
+        15
+      
+
+      <Modal show={isModalOpen} onHide={closeModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal title</Modal.Title>
+        </Modal.Header>
+
+        <Modal.Body>
+          <p>Do you want to upload files?</p>
+        </Modal.Body>
+
+        <Modal.Footer>
+          <Button variant="secondary" onClick={closeModal}>
+            No
+          </Button>
+          <Button variant="primary" onClick={handleSaveChanges}>
+            Yes
+          </Button>
+        </Modal.Footer>
+      </Modal>
 </div>
 <div >
                   <p className="ms-1 pt-3 ps-4">
@@ -2045,10 +2094,32 @@ const handleSaveChanges = () => {
   </p>
 </div>
 <div >
-<p className="ms-1 pt-3 ps-3">
-  <FontAwesomeIcon style={{ color: 'grey', height: '20px', marginRight: '6px' }} icon={faLink} />
-  15
-</p>
+<FontAwesomeIcon
+          style={{ color: 'grey', height: '20px', marginRight: '6px', cursor: 'pointer',marginTop:'15px',paddingLeft:'14px' }}
+          icon={faLink}
+          onClick={openModal}
+        />
+        15
+      
+
+      <Modal show={isModalOpen} onHide={closeModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal title</Modal.Title>
+        </Modal.Header>
+
+        <Modal.Body>
+          <p>Do you want to upload files?</p>
+        </Modal.Body>
+
+        <Modal.Footer>
+          <Button variant="secondary" onClick={closeModal}>
+            No
+          </Button>
+          <Button variant="primary" onClick={handleSaveChanges}>
+            Yes
+          </Button>
+        </Modal.Footer>
+      </Modal>
 </div>
 <div >
                   <p className="ms-1 pt-3 ps-4">
@@ -2116,10 +2187,32 @@ const handleSaveChanges = () => {
   </p>
 </div>
 <div >
-<p className="ms-1 pt-3 ps-3">
-  <FontAwesomeIcon style={{ color: 'grey', height: '20px', marginRight: '6px' }} icon={faLink} />
-  15
-</p>
+<FontAwesomeIcon
+          style={{ color: 'grey', height: '20px', marginRight: '6px', cursor: 'pointer',marginTop:'15px',paddingLeft:'14px' }}
+          icon={faLink}
+          onClick={openModal}
+        />
+        15
+      
+
+      <Modal show={isModalOpen} onHide={closeModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal title</Modal.Title>
+        </Modal.Header>
+
+        <Modal.Body>
+          <p>Do you want to upload files?</p>
+        </Modal.Body>
+
+        <Modal.Footer>
+          <Button variant="secondary" onClick={closeModal}>
+            No
+          </Button>
+          <Button variant="primary" onClick={handleSaveChanges}>
+            Yes
+          </Button>
+        </Modal.Footer>
+      </Modal>
 </div>
 <div >
                   <p className="ms-1 pt-3 ps-4">
@@ -2189,10 +2282,32 @@ const handleSaveChanges = () => {
   </p>
 </div>
 <div >
-<p className="ms-1 pt-3 ps-3">
-  <FontAwesomeIcon style={{ color: 'grey', height: '20px', marginRight: '6px' }} icon={faLink} />
-  15
-</p>
+<FontAwesomeIcon
+          style={{ color: 'grey', height: '20px', marginRight: '6px', cursor: 'pointer',marginTop:'15px',paddingLeft:'14px' }}
+          icon={faLink}
+          onClick={openModal}
+        />
+        15
+      
+
+      <Modal show={isModalOpen} onHide={closeModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal title</Modal.Title>
+        </Modal.Header>
+
+        <Modal.Body>
+          <p>Do you want to upload files?</p>
+        </Modal.Body>
+
+        <Modal.Footer>
+          <Button variant="secondary" onClick={closeModal}>
+            No
+          </Button>
+          <Button variant="primary" onClick={handleSaveChanges}>
+            Yes
+          </Button>
+        </Modal.Footer>
+      </Modal>
 </div>
 <div >
                   <p className="ms-1 pt-3 ps-4">
@@ -2266,10 +2381,32 @@ const handleSaveChanges = () => {
 </p>
 </div>
 <div >
-                  <p className="ms-1 pt-3 ps-4">
-    <FontAwesomeIcon style={{color:'grey',height:'20px',marginRight: '6px'}} icon={faCalendarDays} />
-  30-12-2022
-  </p>
+<FontAwesomeIcon
+          style={{ color: 'grey', height: '20px', marginRight: '6px', cursor: 'pointer',marginTop:'15px',paddingLeft:'14px' }}
+          icon={faLink}
+          onClick={openModal}
+        />
+        15
+      
+
+      <Modal show={isModalOpen} onHide={closeModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal title</Modal.Title>
+        </Modal.Header>
+
+        <Modal.Body>
+          <p>Do you want to upload files?</p>
+        </Modal.Body>
+
+        <Modal.Footer>
+          <Button variant="secondary" onClick={closeModal}>
+            No
+          </Button>
+          <Button variant="primary" onClick={handleSaveChanges}>
+            Yes
+          </Button>
+        </Modal.Footer>
+      </Modal>
 </div>
        
                   </div>
@@ -2354,10 +2491,32 @@ const handleSaveChanges = () => {
   </p>
 </div>
 <div >
-<p className="ms-1 pt-3 ps-3">
-  <FontAwesomeIcon style={{ color: 'grey', height: '20px', marginRight: '6px' }} icon={faLink} />
-  15
-</p>
+<FontAwesomeIcon
+          style={{ color: 'grey', height: '20px', marginRight: '6px', cursor: 'pointer',marginTop:'15px',paddingLeft:'14px' }}
+          icon={faLink}
+          onClick={openModal}
+        />
+        15
+      
+
+      <Modal show={isModalOpen} onHide={closeModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal title</Modal.Title>
+        </Modal.Header>
+
+        <Modal.Body>
+          <p>Do you want to upload files?</p>
+        </Modal.Body>
+
+        <Modal.Footer>
+          <Button variant="secondary" onClick={closeModal}>
+            No
+          </Button>
+          <Button variant="primary" onClick={handleSaveChanges}>
+            Yes
+          </Button>
+        </Modal.Footer>
+      </Modal>
 </div>
 <div >
                   <p className="ms-1 pt-3 ps-4">
@@ -2427,10 +2586,32 @@ const handleSaveChanges = () => {
   </p>
 </div>
 <div >
-<p className="ms-1 pt-3 ps-3">
-  <FontAwesomeIcon style={{ color: 'grey', height: '20px', marginRight: '6px' }} icon={faLink} />
-  15
-</p>
+<FontAwesomeIcon
+          style={{ color: 'grey', height: '20px', marginRight: '6px', cursor: 'pointer',marginTop:'15px',paddingLeft:'14px' }}
+          icon={faLink}
+          onClick={openModal}
+        />
+        15
+      
+
+      <Modal show={isModalOpen} onHide={closeModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal title</Modal.Title>
+        </Modal.Header>
+
+        <Modal.Body>
+          <p>Do you want to upload files?</p>
+        </Modal.Body>
+
+        <Modal.Footer>
+          <Button variant="secondary" onClick={closeModal}>
+            No
+          </Button>
+          <Button variant="primary" onClick={handleSaveChanges}>
+            Yes
+          </Button>
+        </Modal.Footer>
+      </Modal>
 </div>
 <div >
                   <p className="ms-1 pt-3 ps-4">
@@ -2499,10 +2680,32 @@ const handleSaveChanges = () => {
   </p>
 </div>
 <div >
-<p className="ms-1 pt-3 ps-3">
-  <FontAwesomeIcon style={{ color: 'grey', height: '20px', marginRight: '6px' }} icon={faLink} />
-  15
-</p>
+<FontAwesomeIcon
+          style={{ color: 'grey', height: '20px', marginRight: '6px', cursor: 'pointer',marginTop:'15px',paddingLeft:'14px' }}
+          icon={faLink}
+          onClick={openModal}
+        />
+        15
+      
+
+      <Modal show={isModalOpen} onHide={closeModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal title</Modal.Title>
+        </Modal.Header>
+
+        <Modal.Body>
+          <p>Do you want to upload files?</p>
+        </Modal.Body>
+
+        <Modal.Footer>
+          <Button variant="secondary" onClick={closeModal}>
+            No
+          </Button>
+          <Button variant="primary" onClick={handleSaveChanges}>
+            Yes
+          </Button>
+        </Modal.Footer>
+      </Modal>
 </div>
 <div >
                   <p className="ms-1 pt-3 ps-4">
@@ -2570,10 +2773,32 @@ const handleSaveChanges = () => {
   </p>
 </div>
 <div >
-<p className="ms-1 pt-3 ps-3">
-  <FontAwesomeIcon style={{ color: 'grey', height: '20px', marginRight: '6px' }} icon={faLink} />
-  15
-</p>
+<FontAwesomeIcon
+          style={{ color: 'grey', height: '20px', marginRight: '6px', cursor: 'pointer',marginTop:'15px',paddingLeft:'14px' }}
+          icon={faLink}
+          onClick={openModal}
+        />
+        15
+      
+
+      <Modal show={isModalOpen} onHide={closeModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal title</Modal.Title>
+        </Modal.Header>
+
+        <Modal.Body>
+          <p>Do you want to upload files?</p>
+        </Modal.Body>
+
+        <Modal.Footer>
+          <Button variant="secondary" onClick={closeModal}>
+            No
+          </Button>
+          <Button variant="primary" onClick={handleSaveChanges}>
+            Yes
+          </Button>
+        </Modal.Footer>
+      </Modal>
 </div>
 <div >
                   <p className="ms-1 pt-3 ps-4">
@@ -2643,10 +2868,32 @@ const handleSaveChanges = () => {
   </p>
 </div>
 <div >
-<p className="ms-1 pt-3 ps-3">
-  <FontAwesomeIcon style={{ color: 'grey', height: '20px', marginRight: '6px' }} icon={faLink} />
-  15
-</p>
+<FontAwesomeIcon
+          style={{ color: 'grey', height: '20px', marginRight: '6px', cursor: 'pointer',marginTop:'15px',paddingLeft:'14px' }}
+          icon={faLink}
+          onClick={openModal}
+        />
+        15
+      
+
+      <Modal show={isModalOpen} onHide={closeModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal title</Modal.Title>
+        </Modal.Header>
+
+        <Modal.Body>
+          <p>Do you want to upload files?</p>
+        </Modal.Body>
+
+        <Modal.Footer>
+          <Button variant="secondary" onClick={closeModal}>
+            No
+          </Button>
+          <Button variant="primary" onClick={handleSaveChanges}>
+            Yes
+          </Button>
+        </Modal.Footer>
+      </Modal>
 </div>
 <div >
                   <p className="ms-1 pt-3 ps-4">
@@ -2714,10 +2961,32 @@ const handleSaveChanges = () => {
   </p>
 </div>
 <div >
-<p className="ms-1 pt-3 ps-3">
-  <FontAwesomeIcon style={{ color: 'grey', height: '20px', marginRight: '6px' }} icon={faLink} />
-  15
-</p>
+<FontAwesomeIcon
+          style={{ color: 'grey', height: '20px', marginRight: '6px', cursor: 'pointer',marginTop:'15px',paddingLeft:'14px' }}
+          icon={faLink}
+          onClick={openModal}
+        />
+        15
+      
+
+      <Modal show={isModalOpen} onHide={closeModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal title</Modal.Title>
+        </Modal.Header>
+
+        <Modal.Body>
+          <p>Do you want to upload files?</p>
+        </Modal.Body>
+
+        <Modal.Footer>
+          <Button variant="secondary" onClick={closeModal}>
+            No
+          </Button>
+          <Button variant="primary" onClick={handleSaveChanges}>
+            Yes
+          </Button>
+        </Modal.Footer>
+      </Modal>
 </div>
 <div >
                   <p className="ms-1 pt-3 ps-4">
@@ -2808,10 +3077,32 @@ const handleSaveChanges = () => {
   </p>
 </div>
 <div >
-<p className="ms-1 pt-3 ps-3">
-  <FontAwesomeIcon style={{ color: 'grey', height: '20px', marginRight: '6px' }} icon={faLink} />
-  15
-</p>
+<FontAwesomeIcon
+          style={{ color: 'grey', height: '20px', marginRight: '6px', cursor: 'pointer',marginTop:'15px',paddingLeft:'14px' }}
+          icon={faLink}
+          onClick={openModal}
+        />
+        15
+      
+
+      <Modal show={isModalOpen} onHide={closeModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal title</Modal.Title>
+        </Modal.Header>
+
+        <Modal.Body>
+          <p>Do you want to upload files?</p>
+        </Modal.Body>
+
+        <Modal.Footer>
+          <Button variant="secondary" onClick={closeModal}>
+            No
+          </Button>
+          <Button variant="primary" onClick={handleSaveChanges}>
+            Yes
+          </Button>
+        </Modal.Footer>
+      </Modal>
 </div>
 <div >
                   <p className="ms-1 pt-3 ps-4">
@@ -2881,10 +3172,32 @@ const handleSaveChanges = () => {
   </p>
 </div>
 <div >
-<p className="ms-1 pt-3 ps-3">
-  <FontAwesomeIcon style={{ color: 'grey', height: '20px', marginRight: '6px' }} icon={faLink} />
-  15
-</p>
+<FontAwesomeIcon
+          style={{ color: 'grey', height: '20px', marginRight: '6px', cursor: 'pointer',marginTop:'15px',paddingLeft:'14px' }}
+          icon={faLink}
+          onClick={openModal}
+        />
+        15
+      
+
+      <Modal show={isModalOpen} onHide={closeModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal title</Modal.Title>
+        </Modal.Header>
+
+        <Modal.Body>
+          <p>Do you want to upload files?</p>
+        </Modal.Body>
+
+        <Modal.Footer>
+          <Button variant="secondary" onClick={closeModal}>
+            No
+          </Button>
+          <Button variant="primary" onClick={handleSaveChanges}>
+            Yes
+          </Button>
+        </Modal.Footer>
+      </Modal>
 </div>
 <div >
                   <p className="ms-1 pt-3 ps-4">
@@ -2953,10 +3266,32 @@ const handleSaveChanges = () => {
   </p>
 </div>
 <div >
-<p className="ms-1 pt-3 ps-3">
-  <FontAwesomeIcon style={{ color: 'grey', height: '20px', marginRight: '6px' }} icon={faLink} />
-  15
-</p>
+<FontAwesomeIcon
+          style={{ color: 'grey', height: '20px', marginRight: '6px', cursor: 'pointer',marginTop:'15px',paddingLeft:'14px' }}
+          icon={faLink}
+          onClick={openModal}
+        />
+        15
+      
+
+      <Modal show={isModalOpen} onHide={closeModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal title</Modal.Title>
+        </Modal.Header>
+
+        <Modal.Body>
+          <p>Do you want to upload files?</p>
+        </Modal.Body>
+
+        <Modal.Footer>
+          <Button variant="secondary" onClick={closeModal}>
+            No
+          </Button>
+          <Button variant="primary" onClick={handleSaveChanges}>
+            Yes
+          </Button>
+        </Modal.Footer>
+      </Modal>
 </div>
 <div >
                   <p className="ms-1 pt-3 ps-4">
@@ -3024,10 +3359,32 @@ const handleSaveChanges = () => {
   </p>
 </div>
 <div >
-<p className="ms-1 pt-3 ps-3">
-  <FontAwesomeIcon style={{ color: 'grey', height: '20px', marginRight: '6px' }} icon={faLink} />
-  15
-</p>
+<FontAwesomeIcon
+          style={{ color: 'grey', height: '20px', marginRight: '6px', cursor: 'pointer',marginTop:'15px',paddingLeft:'14px' }}
+          icon={faLink}
+          onClick={openModal}
+        />
+        15
+      
+
+      <Modal show={isModalOpen} onHide={closeModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal title</Modal.Title>
+        </Modal.Header>
+
+        <Modal.Body>
+          <p>Do you want to upload files?</p>
+        </Modal.Body>
+
+        <Modal.Footer>
+          <Button variant="secondary" onClick={closeModal}>
+            No
+          </Button>
+          <Button variant="primary" onClick={handleSaveChanges}>
+            Yes
+          </Button>
+        </Modal.Footer>
+      </Modal>
 </div>
 <div >
                   <p className="ms-1 pt-3 ps-4">
@@ -3097,10 +3454,32 @@ const handleSaveChanges = () => {
   </p>
 </div>
 <div >
-<p className="ms-1 pt-3 ps-3">
-  <FontAwesomeIcon style={{ color: 'grey', height: '20px', marginRight: '6px' }} icon={faLink} />
-  15
-</p>
+<FontAwesomeIcon
+          style={{ color: 'grey', height: '20px', marginRight: '6px', cursor: 'pointer',marginTop:'15px',paddingLeft:'14px' }}
+          icon={faLink}
+          onClick={openModal}
+        />
+        15
+      
+
+      <Modal show={isModalOpen} onHide={closeModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal title</Modal.Title>
+        </Modal.Header>
+
+        <Modal.Body>
+          <p>Do you want to upload files?</p>
+        </Modal.Body>
+
+        <Modal.Footer>
+          <Button variant="secondary" onClick={closeModal}>
+            No
+          </Button>
+          <Button variant="primary" onClick={handleSaveChanges}>
+            Yes
+          </Button>
+        </Modal.Footer>
+      </Modal>
 </div>
 <div >
                   <p className="ms-1 pt-3 ps-4">
@@ -3168,10 +3547,32 @@ const handleSaveChanges = () => {
   </p>
 </div>
 <div >
-<p className="ms-1 pt-3 ps-3">
-  <FontAwesomeIcon style={{ color: 'grey', height: '20px', marginRight: '6px' }} icon={faLink} />
-  15
-</p>
+<FontAwesomeIcon
+          style={{ color: 'grey', height: '20px', marginRight: '6px', cursor: 'pointer',marginTop:'15px',paddingLeft:'14px' }}
+          icon={faLink}
+          onClick={openModal}
+        />
+        15
+      
+
+      <Modal show={isModalOpen} onHide={closeModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal title</Modal.Title>
+        </Modal.Header>
+
+        <Modal.Body>
+          <p>Do you want to upload files?</p>
+        </Modal.Body>
+
+        <Modal.Footer>
+          <Button variant="secondary" onClick={closeModal}>
+            No
+          </Button>
+          <Button variant="primary" onClick={handleSaveChanges}>
+            Yes
+          </Button>
+        </Modal.Footer>
+      </Modal>
 </div>
 <div >
                   <p className="ms-1 pt-3 ps-4">
@@ -3188,7 +3589,7 @@ const handleSaveChanges = () => {
       </div>
     </Card>
     </div>
-    </CardGroup>
+    </CardGroup> 
     
     
         </div>
